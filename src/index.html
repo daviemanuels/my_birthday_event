@@ -4,11 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo.png" alt="Logo meu aniversário">
+            <p class="hero__text">
+                O meu aniversário <span id="inicio"></span> <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Jardim Paulistano - Campina Grande - Paraíba/PB
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        Sua presença
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        31 Jan 2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença!
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--atraction">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Atrações principais
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque animi est illo assumenda? Eos id veritatis corrupti accusamus quos voluptates adipisci dolorum quisquam minus itaque perspiciatis debitis, tempora quasi?
+                </p>
+            </div>
+            <img class="event__image" src="./images/event_main.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--local event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Localidade
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque animi est illo assumenda? Eos id veritatis corrupti accusamus quos voluptates adipisci dolorum quisquam minus itaque perspiciatis debitis, tempora quasi?
+                </p>
+            </div>
+            <img class="event__image" src="./images/localidade.jpeg" alt="">
+        </div>
+    </section>
+    <section class="event event--fun">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Diversão garantida!
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque animi est illo assumenda? Eos id veritatis corrupti accusamus quos voluptates adipisci dolorum quisquam minus itaque perspiciatis debitis, tempora quasi?
+                </p>
+            </div>
+            <img class="event__image" src="./images/diversao.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--food event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Muita comida
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque animi est illo assumenda? Eos id veritatis corrupti accusamus quos voluptates adipisci dolorum quisquam minus itaque perspiciatis debitis, tempora quasi?
+                </p>
+            </div>
+            <img class="event__image" src="./images/comida.jpg" alt="">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
